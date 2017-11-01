@@ -1,0 +1,23 @@
+﻿<Controls:MetroWindow 
+        x:Class="SpeechToText.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        Title="IBM Watson Speech to Text Tester" Height="300" Width="500" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="215*"/>
+            <ColumnDefinition Width="279*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnTranscode" Content="Transcode" HorizontalAlignment="Left" Margin="192,234,0,0" VerticalAlignment="Top" Width="75" Click="btnTranscode_Click" Grid.Column="1"/>
+        <Label Content="IBM Bluemix Credentials" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" VerticalAlignment="Top" Width="300" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="23" Margin="107,36,0,0" VerticalAlignment="Top" Width="160" Grid.Column="1"/>
+        <Label Content="Audio File Path" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Output File Path" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="txtAudioPath" HorizontalAlignment="Left" Height="23" Margin="10,101,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtOutputPath" HorizontalAlignment="Left" Height="23" Margin="10,166,0,0" VerticalAlignment="Top" Width="438" Grid.ColumnSpan="2"/>
+        <Button x:Name="btnBrowseAudio" Content="..." HorizontalAlignment="Left" Margin="238,101,0,0" VerticalAlignment="Top" Width="29" Click="btnBrowseAudio_Click" Grid.Column="1"/>
+        <Button x:Name="btnBrowseOutput" Content="..." HorizontalAlignment="Left" Margin="238,166,0,0" VerticalAlignment="Top" Width="29" Click="btnBrowseOutput_Click" Grid.Column="1"/>
+    </Grid>
+</Controls:MetroWindow>
